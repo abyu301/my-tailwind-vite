@@ -1,27 +1,60 @@
-// import './style.css'
-// import javascriptLogo from './javascript.svg'
-// import viteLogo from '/vite.svg'
-// import { setupCounter } from './counter.js'
+import './style.css';
 
-// document.querySelector('#app').innerHTML = `
-  
-// `
+const app = document.querySelector('#app');
 
-// setupCounter(document.querySelector('#counter'))
+if (app) {
+  app.innerHTML = `
+    <div class="min-h-screen bg-gray-50">
+      <!-- Navigation -->
+      <nav class="flex items-center justify-between p-6 bg-white shadow">
+        <h1 class="text-2xl font-bold">
+          <a href="/" class="hover:text-blue-500">Food Ninja</a>
+        </h1>
+        <ul class="flex space-x-6">
+          <li><a href="#" class="hover:text-blue-500"><span>Home</span></a></li>
+          <li><a href="#" class="hover:text-blue-500"><span>About</span></a></li>
+          <li><a href="#" class="hover:text-blue-500"><span>Contact</span></a></li>
+        </ul>
+      </nav>
 
+      <!-- Auth Links -->
+      <div class="flex justify-end space-x-4 mt-4 px-6">
+        <a href="#" class="text-gray-700 hover:text-blue-500">Log in</a>
+        <a href="#" class="text-gray-700 hover:text-blue-500">Sign up</a>
+      </div>
 
-import './style.css' // loads Tailwind
+      <!-- Header -->
+      <header class="text-center mt-12">
+        <h2 class="text-3xl font-bold">Recipes</h2>
+        <h3 class="text-xl text-gray-600">For Ninjas</h3>
+      </header>
 
-document.querySelector('#app').innerHTML = `
-  <div class="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
-    <h1 class="text-4xl font-bold underline bg-yellow-300 p-4 mb-4">
-      Hello Tailwind!
-    </h1>
-    <p class="text-lg text-gray-700">
-      This is your first Tailwind + Vite project.
-    </p>
-    <button class="mt-4 px-6 py-2 bg-blue-500 text-white font-semibold rounded hover:bg-blue-600">
-      Click me
-    </button>
-  </div>
-`;
+      <!-- Latest Recipes -->
+      <section class="mt-12 px-6">
+        <h4 class="text-2xl font-semibold mb-4">Latest Recipes</h4>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- card -->
+          <div class="bg-white rounded shadow overflow-hidden">
+            <img src="img/stew.jpg" alt="stew" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <span class="block font-semibold">5 Bean Chili Stew</span>
+              <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+            </div>
+          </div>
+        </div>
+
+        <h4 class="text-2xl font-semibold mt-12 mb-4">Most Popular</h4>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Most popular cards -->
+        </div>
+      </section>
+
+      <!-- Load More -->
+      <div class="flex justify-center my-12">
+        <button class="px-6 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+          Load more
+        </button>
+      </div>
+    </div>
+  `;
+}
