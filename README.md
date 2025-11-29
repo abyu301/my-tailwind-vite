@@ -1,3 +1,7 @@
+## Live Demo
+[View Live Project](https://your-vercel-url.vercel.app)
+
+
 # Food Ninja 🍜
 
 A modern, responsive recipe website built with Tailwind CSS and Vite.  
@@ -49,4 +53,9 @@ npm run dev
 
 📄 License
 Open source under the MIT License.
+
+
+## Live Demo
+[View Live Project](https://your-vercel-url.vercel.app)
+
 
