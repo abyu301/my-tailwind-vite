@@ -5,34 +5,39 @@ const app = document.querySelector("#app");
 if (app) {
   app.innerHTML = `
     <div class="min-h-screen bg-gray-50">
-      <!-- Navigation -->
-      <nav class="flex items-center justify-between p-6 bg-white shadow">
-        <h1 class="text-2xl font-bold">
-          <a href="/" class="hover:text-blue-500">Food Ninja</a>
-        </h1>
 
-        <ul class="flex space-x-6 items-center">
-          <li class="flex items-center space-x-1">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M3 12l9-9 9 9M4 10v10h16V10" />
-            </svg>
-            <a href="#" class="hover:text-blue-500">Home</a>
-          </li>
-          <li class="flex items-center space-x-1">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20 10 10 0 000-20z" />
-            </svg>
-            <a href="#" class="hover:text-blue-500">About</a>
-          </li>
-          <li class="flex items-center space-x-1">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M16 12h2a2 2 0 012 2v6H4v-6a2 2 0 012-2h2m4-4v8m0-8l-4 4m4-4l4 4" />
-            </svg>
-            <a href="#" class="hover:text-blue-500">Contact</a>
-          </li>
+      <!-- Navigation -->
+      <nav class="bg-white shadow px-6 py-4">
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <div class="text-2xl font-bold">
+            <a href="/">Food Ninja</a>
+          </div>
+
+          <!-- Desktop Size Links -->
+          <ul class="hidden sm:flex space-x-6">
+            <li><a href="#" class="hover:text-blue-500">Home</a></li>
+            <li><a href="#" class="hover:text-blue-500">About</a></li>
+            <li><a href="#" class="hover:text-blue-500">Contact</a></li>
+          </ul>
+
+          <!-- Mobile Menu Button -->
+          <div class="sm:hidden">
+            <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+              <!-- Hamburger Icon -->
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <ul id="mobile-menu" class="hidden flex-col mt-4 space-y-2 sm:hidden">
+          <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded">Home</a></li>
+          <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded">About</a></li>
+          <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded">Contact</a></li>
         </ul>
       </nav>
 
@@ -106,7 +111,7 @@ if (app) {
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <!-- Popular Card 1 -->
           <div class="bg-yellow-50 rounded shadow overflow-hidden relative hover:scale-105 transition-transform duration-200">
-            <img src="../public/img/Creamy Pasta.webp" alt="pasta" class="w-full h-48 object-cover">
+            <img src="img/Creamy Pasta.webp" alt="pasta" class="w-full h-48 object-cover">
             <div class="p-4">
               <span class="block font-semibold">Creamy Pasta</span>
               <span class="block text-gray-500 text-sm">Recipe by Anna</span>
@@ -122,7 +127,7 @@ if (app) {
 
           <!-- Popular Card 2 -->
           <div class="bg-yellow-50 rounded shadow overflow-hidden relative hover:scale-105 transition-transform duration-200">
-            <img src="../public/img/avocado salad.jpg" alt="salad" class="w-full h-48 object-cover">
+            <img src="img/avocado salad.jpg" alt="salad" class="w-full h-48 object-cover">
             <div class="p-4">
               <span class="block font-semibold">Avocado Salad</span>
               <span class="block text-gray-500 text-sm">Recipe by John</span>
@@ -138,7 +143,7 @@ if (app) {
 
           <!-- Popular Card 3 -->
           <div class="bg-yellow-50 rounded shadow overflow-hidden relative hover:scale-105 transition-transform duration-200">
-            <img src="../public/img/Tomato Soup.webp" alt="soup" class="w-full h-48 object-cover">
+            <img src="img/Tomato Soup.webp" alt="soup" class="w-full h-48 object-cover">
             <div class="p-4">
               <span class="block font-semibold">Tomato Soup</span>
               <span class="block text-gray-500 text-sm">Recipe by Clara</span>
@@ -162,4 +167,14 @@ if (app) {
       </div>
     </div>
   `;
+
+  // Mobile dropdown functionality
+  const menuButton = document.getElementById("mobile-menu-button");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  if (menuButton && mobileMenu) {
+    menuButton.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  }
 }
