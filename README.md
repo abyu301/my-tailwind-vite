@@ -4,10 +4,11 @@
 
 
 ## 💻 Tech Stack
-- **Frontend:** HTML, CSS, JavaScript  
-- **CSS Framework:** Tailwind CSS  
-- **Build Tool:** Vite  
-- **Hosting / Deployment:** Vercel
+- **Frontend:** HTML, CSS, JavaScript
+- **CSS Framework:** Tailwind CSS
+- **Build Tool / Bundler:** Vite
+- **Hosting & Deployment:** Vercel
+- **Assistance / Productivity Tools:** ChatGPT (used for coding assistance, debugging, and learning)
 
 
 ## 📝 Features
@@ -67,7 +68,6 @@ It solves the problem of presenting recipes in a **mobile-friendly, visually app
 ![Mobile Menu](./public/img/screenshoots/WhatsApp%20Image%202025-11-29%20at%2008.31.49_9d9c0fd5.jpg)
 ### Mobile View Full page including header and body
 ![Mobile Menu](./public/img/screenshoots/WhatsApp%20Image%202025-11-29%20at%2008.31.49_8b5dfde1.jpg)
-
 
 
 
