@@ -54,6 +54,17 @@ It solves the problem of presenting recipes in a **mobile-friendly, visually app
 
 
 
+## 🖼️ Screenshots
+
+### Desktop View
+![Homepage](./public/img/screenshoots/Screenshot%20(3).png)
+
+### Mobile View
+![Mobile Menu](./public/img/screenshoots/WhatsApp%20Image%202025-11-29%20at%2008.31.49_8b5dfde1.jpg)
+
+
+
+
 ## 📂 Project Structure
 my-tailwind-vite/
 ├── index.html ← Entry point (root <div id="app">)
