@@ -159,7 +159,7 @@ if (app) {
         </div>
       </section>
 
-      <!-- Load More -->
+      <!-- Load More Button-->
       <div class="flex justify-center my-12">
         <button class="px-6 py-2 bg-blue-500 text-white rounded hover:bg-green-600 transition-colors duration-200">
           Load more
