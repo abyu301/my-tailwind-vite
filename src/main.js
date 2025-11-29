@@ -19,8 +19,8 @@ if (app) {
 
       <!-- Auth Links -->
       <div class="flex justify-end space-x-4 mt-4 px-6">
-        <a href="#" class="text-gray-700 hover:text-blue-500">Log in</a>
-        <a href="#" class="text-gray-700 hover:text-blue-500">Sign up</a>
+        <a href="#" class="text-yellow-500 hover:text-green-500">Log in</a>
+        <a href="#" class="text-yellow-500 hover:text-green-500">Sign up</a>
       </div>
 
       <!-- Header -->
@@ -33,12 +33,31 @@ if (app) {
       <section class="mt-12 px-6">
         <h4 class="text-2xl font-semibold mb-4">Latest Recipes</h4>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
           <!-- card -->
-          <div class="bg-white rounded shadow overflow-hidden">
+          <div class="bg-white rounded shadow overflow-hidden relative">
             <img src="img/stew.jpg" alt="stew" class="w-full h-48 object-cover">
             <div class="p-4">
               <span class="block font-semibold">5 Bean Chili Stew</span>
+              <span class="block text-gray-500 text-sm">Recipe by Abyu</span>
+            </div>
+            <div class="bg-orange-200 text-gray-700 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2">
+              <span>25 mins</span>
+            </div>
+
+          </div>
+          <div class="bg-white rounded shadow overflow-hidden">
+            <img src="img/noodles.jpg" alt="stew" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <span class="block font-semibold">Classic Noodles</span>
               <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+            </div>
+          </div>
+          <div class="bg-white rounded shadow overflow-hidden">
+            <img src="img/curry.jpg" alt="stew" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <span class="block font-semibold">Special Curry</span>
+              <span class="block text-gray-500 text-sm">Recipe by Ninjas</span>
             </div>
           </div>
         </div>
