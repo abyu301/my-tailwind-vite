@@ -56,10 +56,16 @@ It solves the problem of presenting recipes in a **mobile-friendly, visually app
 
 ## 🖼️ Screenshots
 
-### Desktop View
+### Desktop View body
+![Homepage](./public/img/screenshoots/Screenshot%20(4).png)
+### Desktop View header
 ![Homepage](./public/img/screenshoots/Screenshot%20(3).png)
+### Desktop View mobile size
+![Homepage](./public/img/screenshoots/Screenshot%20(5).png)
 
-### Mobile View
+### Mobile View Header only with dropdown menu
+![Mobile Menu](./public/img/screenshoots/WhatsApp%20Image%202025-11-29%20at%2008.31.49_9d9c0fd5.jpg)
+### Mobile View Full page including header and body
 ![Mobile Menu](./public/img/screenshoots/WhatsApp%20Image%202025-11-29%20at%2008.31.49_8b5dfde1.jpg)
 
 
