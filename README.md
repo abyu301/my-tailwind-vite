@@ -1,5 +1,5 @@
 ## Live Demo
-[View Live Project](https://your-vercel-url.vercel.app)
+[View Live Project](https://my-tailwind-vite-v2.vercel.app/)
 
 
 # Food Ninja 🍜
@@ -40,6 +40,7 @@ Dynamically injecting HTML using JavaScript
 Using Tailwind classes to style components efficiently
 Handling events (e.g., mobile menu toggle)
 
+[View Live Project](https://my-tailwind-vite-v2.vercel.app/)
 
 ## 💻 Installation & Running Locally
 
@@ -56,6 +57,5 @@ Open source under the MIT License.
 
 
 ## Live Demo
-[View Live Project](https://your-vercel-url.vercel.app)
-
+[View Live Project](https://my-tailwind-vite-v2.vercel.app/)
 
